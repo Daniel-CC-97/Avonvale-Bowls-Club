@@ -7,15 +7,28 @@ import NavBar from "../components/navbar";
 import { getGames } from '../../utils';
 import Hero from '../components/hero';
 
+interface FixtureType {
+    fields: {
+        dateAndTime: string; // Assuming dateAndTime is a string in ISO format like "2024-06-21T13:00+01:00"
+        teams: [string, string]; // Assuming teams is an array of two strings
+        gameType: string;
+        venue: string;
+    };
+}
+
 export default function Page() {
-  const [fixtures, setFixtures] = useState([]);
+  const [fixtures, setFixtures] = useState<any>([]);
 
   useEffect(() => {
     const fetchGames = async () => {
+    try {
       const games = await getGames();
       const filteredFixtures = games.filter(game => !game.fields.result);
       setFixtures(filteredFixtures);
+      } catch (error) {
+        console.error('Error fetching games: ', error)
       };
+    }
       
       fetchGames();
       }, []);

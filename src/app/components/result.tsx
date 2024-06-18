@@ -1,6 +1,15 @@
 import { getLongDate } from "@/utils";
 
 interface ResultProps {
+    result: {
+        fields: {
+            dateAndTime: string; // Assuming dateAndTime is a string in ISO format like "2024-06-21T13:00+01:00"
+            teams: [string, string]; // Assuming teams is an array of two strings
+            gameType: string;
+            venue: string;
+            result: string;
+        };
+    };
 }
 
 const Result : React.FC<ResultProps> = ({result}) => {
