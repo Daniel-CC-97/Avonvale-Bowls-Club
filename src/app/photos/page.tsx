@@ -30,11 +30,11 @@ export default function Page() {
           <NavBar />
           <Hero text="Photos" imageUrl="/bowl.jpg" height="small" />
           <main className="flex-grow text-primary-darker mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap justify-between">
                 {images.map((image, index) => (
-                    <div key={index} className="lg:w-[49.6%]">
+                    <div key={index} className="md:w-[49.6%] w-full">
                         <Image
-                            className="rounded-lg"
+                            className="rounded-lg mb-2"
                             src={'https:' + image.fields.photo.fields.file.url}
                             width={image.fields.photo.fields.file.details.image.width}
                             height={image.fields.photo.fields.file.details.image.height}
