@@ -23,8 +23,6 @@ export default function Page() {
         
         fetchImages();
         }, []);
-
-        console.log('images: ', images)
         
     return (
   
