@@ -34,9 +34,8 @@ export default function Page() {
           <main className="flex-grow text-primary-darker mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="flex flex-wrap gap-2">
                 {images.map((image, index) => (
-                    <div className="lg:w-[49.6%]">
+                    <div key={index} className="lg:w-[49.6%]">
                         <Image
-                            key={index}
                             className="rounded-lg"
                             src={'https:' + image.fields.photo.fields.file.url}
                             width={image.fields.photo.fields.file.details.image.width}
