@@ -51,6 +51,9 @@ export default function Page() {
     ? results.filter(result => result.fields.competition === selectedCompetition)
     : results;
 
+// Sort the filtered fixtures by date
+  const sortedResults = filteredResults.sort((a, b) => new Date(a.fields.dateAndTime).getTime() - new Date(b.fields.dateAndTime).getTime());
+
   return (
     <div className="flex flex-col min-h-screen">
       <NavBar />
@@ -71,7 +74,7 @@ export default function Page() {
           </select>
         </div>
         <div className="flex flex-col w-full gap-2">
-          {filteredResults.map((result, index) => (
+          {sortedResults.map((result, index) => (
             <Result key={index} result={result} />
           ))}
         </div>

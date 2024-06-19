@@ -29,7 +29,7 @@ const competitions = [
 ];
 
 export default function Page() {
-  const [fixtures, setFixtures] = useState<any>([]);
+  const [fixtures, setFixtures] = useState<any[]>([]);
   const [selectedCompetition, setSelectedCompetition] = useState<string>("");
 
   useEffect(() => {
@@ -49,6 +49,9 @@ export default function Page() {
   const filteredFixtures = selectedCompetition 
     ? fixtures.filter(fixture => fixture.fields.competition === selectedCompetition)
     : fixtures;
+
+  // Sort the filtered fixtures by date
+  const sortedFixtures = filteredFixtures.sort((a, b) => new Date(a.fields.dateAndTime).getTime() - new Date(b.fields.dateAndTime).getTime());
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -70,7 +73,7 @@ export default function Page() {
           </select>
         </div>
         <div className="flex flex-col w-full gap-2">
-          {filteredFixtures.map((fixture, index) => (
+          {sortedFixtures.map((fixture, index) => (
             <Fixture key={index} fixture={fixture} />
           ))}
         </div>
@@ -79,3 +82,4 @@ export default function Page() {
     </div>
   );
 }
+
