@@ -20,12 +20,14 @@ const config: Config = {
         'primary-saturated': '#00456d',
         'primary-desaturated': '#3e6d8f',
         'primary-tinted-white': '#335a7d',
+        'primary-faded': '#004d7966',
         secondary: '#ec952c',
         'secondary-darker': '#c16b1d',
         'secondary-lighter': '#f8b671',
         'secondary-vibrant': '#ffa349',
         'secondary-golden': '#eac577',
-        'secondary-warm': '#f5ac65'
+        'secondary-warm': '#f5ac65',
+        'secondary-faded': '#ec952c66'
       },
     },
   },
