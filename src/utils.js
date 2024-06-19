@@ -78,3 +78,11 @@ export const getNews = async () => {
 
         return formattedDate; // Output: Friday June 21st 2024
   }
+
+  export const splitArray = (arr) => {
+    const midpoint = Math.ceil(arr.length / 2); // Get the midpoint, rounding up to handle odd lengths
+    const firstHalf = arr.slice(0, midpoint);  // First half of the array
+    const secondHalf = arr.slice(midpoint);    // Second half of the array
+    
+    return [firstHalf, secondHalf];
+  }
