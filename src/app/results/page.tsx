@@ -52,7 +52,7 @@ export default function Page() {
     : results;
 
 // Sort the filtered fixtures by date
-  const sortedResults = filteredResults.sort((a, b) => new Date(a.fields.dateAndTime).getTime() - new Date(b.fields.dateAndTime).getTime());
+  const sortedResults = filteredResults.sort((a, b) => new Date(b.fields.dateAndTime).getTime() - new Date(a.fields.dateAndTime).getTime());
 
   return (
     <div className="flex flex-col min-h-screen">
