@@ -81,8 +81,8 @@ const NavBar: React.FC<NavBarProps> = () => {
                   </button>
                   {isMoreMenuOpen && (
                     <div className="absolute z-10 right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 ring-1 ring-black ring-opacity-5">
-                      <Link href="/option1">
-                        <h6 className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100">Option 1</h6>
+                      <Link href="/officers">
+                        <h6 className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100">Officers</h6>
                       </Link>
                       <Link href="/option2">
                         <h6 className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100">Option 2</h6>
@@ -119,8 +119,8 @@ const NavBar: React.FC<NavBarProps> = () => {
               </button>
               {isMoreMenuOpen && (
                 <div className="mt-2 w-full z-10 bg-white rounded-md shadow-lg py-1 ring-1 ring-black ring-opacity-5">
-                  <Link href="/option1">
-                    <h6 className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100">Option 1</h6>
+                  <Link href="/officers">
+                    <h6 className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100">Officers</h6>
                   </Link>
                   <Link href="/option2">
                     <h6 className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100">Option 2</h6>

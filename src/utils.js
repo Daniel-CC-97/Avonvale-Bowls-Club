@@ -20,7 +20,15 @@ export const getSmallArticles = async () => {
     });
 
     return response.items;
-  }
+  };
+
+  export const getOfficers = async () => {
+    const response = await client.getEntries({
+        content_type: 'officer'
+    });
+
+    return response.items;
+  };
 
   // Get date from String
   export const getLongDate = (dateTimeString) => {
