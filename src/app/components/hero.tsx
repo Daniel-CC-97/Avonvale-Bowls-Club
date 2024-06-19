@@ -14,10 +14,12 @@ const Hero: React.FC<HeroProps> = ({ text, imageUrl, height }) => {
         <Image
           src={imageUrl}
           alt="Hero Image"
-          layout="fill"
+          fill={true}
           objectFit="cover"
           quality={100}
+          objectPosition={height === 'small' ? 'initial' : '0% 25%'}
           priority={true}
+          placeholder='empty'
         />
         <div className="absolute inset-0 bg-black opacity-50" />
       </div>
