@@ -38,6 +38,14 @@ export const getImages = async () => {
     return response.items;
 };
 
+export const getNews = async () => {
+    const response = await client.getEntries({
+        content_type: 'smallArticle'
+    });
+
+    return response.items;
+};
+
   // Get date from String
   export const getLongDate = (dateTimeString) => {
         // Create a new Date object from the datetime string
