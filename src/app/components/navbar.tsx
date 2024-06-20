@@ -60,27 +60,27 @@ const NavBar: React.FC<NavBarProps> = () => {
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
                 <Link href="/fixtures">
-                  <h6 className="text-gray-300 hover:bg-primary-lighter hover:text-secondary-vibrant px-3 py-2 rounded-md text-lg font-medium">
+                  <h6 className="text-white hover:bg-primary-lighter hover:text-secondary-vibrant px-3 py-2 rounded-md text-lg font-medium">
                     Fixtures
                   </h6>
                 </Link>
                 <Link href="/results">
-                  <h6 className="text-gray-300 hover:bg-primary-lighter hover:text-secondary-vibrant px-3 py-2 rounded-md text-lg font-medium">
+                  <h6 className="text-white hover:bg-primary-lighter hover:text-secondary-vibrant px-3 py-2 rounded-md text-lg font-medium">
                     Results
                   </h6>
                 </Link>
                 <Link href="/news">
-                  <h6 className="text-gray-300 hover:bg-primary-lighter hover:text-secondary-vibrant px-3 py-2 rounded-md text-lg font-medium">News</h6>
+                  <h6 className="text-white hover:bg-primary-lighter hover:text-secondary-vibrant px-3 py-2 rounded-md text-lg font-medium">News</h6>
                 </Link>
                 <div className="relative">
                   <button
                     onClick={() => setMoreMenuOpen(!isMoreMenuOpen)}
-                    className="text-gray-300 hover:bg-primary-lighter hover:text-secondary-vibrant px-3 py-2 rounded-md text-lg font-medium"
+                    className="text-white hover:bg-primary-lighter hover:text-secondary-vibrant px-3 py-2 rounded-md text-lg font-medium"
                   >
                     More
                   </button>
                   {isMoreMenuOpen && (
-                    <div className="absolute z-10 right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 ring-1 ring-black ring-opacity-5">
+                    <div className="absolute z-10 right-0 mt-2 w-48 bg-slate-200 rounded-md shadow-lg py-1 ring-1 ring-black ring-opacity-5">
                       <Link href="/officers">
                         <h6 className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100">Officers</h6>
                       </Link>
@@ -102,23 +102,23 @@ const NavBar: React.FC<NavBarProps> = () => {
         <div className="sm:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link href="/fixtures">
-              <h6 className="text-gray-300 hover:bg-primary-lighter hover:text-white block px-3 py-2 rounded-md text-base font-medium">Fixtures</h6>
+              <h6 className="text-white hover:bg-primary-lighter hover:text-white block px-3 py-2 rounded-md text-base font-medium">Fixtures</h6>
             </Link>
             <Link href="/results">
-              <h6 className="text-gray-300 hover:bg-primary-lighter hover:text-white block px-3 py-2 rounded-md text-base font-medium">Results</h6>
+              <h6 className="text-white hover:bg-primary-lighter hover:text-white block px-3 py-2 rounded-md text-base font-medium">Results</h6>
             </Link>
             <Link href="/news">
-              <h6 className="text-gray-300 hover:bg-primary-lighter hover:text-white block px-3 py-2 rounded-md text-base font-medium">News</h6>
+              <h6 className="text-white hover:bg-primary-lighter hover:text-white block px-3 py-2 rounded-md text-base font-medium">News</h6>
             </Link>
             <div className="relative">
               <button
                 onClick={() => setMoreMenuOpen(!isMoreMenuOpen)}
-                className="text-gray-300 hover:bg-primary-lighter hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="text-white hover:bg-primary-lighter hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 More
               </button>
               {isMoreMenuOpen && (
-                <div className="mt-2 w-full z-10 bg-white rounded-md shadow-lg py-1 ring-1 ring-black ring-opacity-5">
+                <div className="mt-2 w-full z-10 bg-slate-200 rounded-md shadow-lg py-1 ring-1 ring-black ring-opacity-5">
                   <Link href="/officers">
                     <h6 className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100">Officers</h6>
                   </Link>
