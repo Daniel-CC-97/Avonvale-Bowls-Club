@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { membershipText } from './data/homepage-text';
 
 import NavBar from './components/navbar';
