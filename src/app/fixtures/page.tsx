@@ -75,8 +75,8 @@ export default function Page() {
         </div>
         <div className="flex flex-col w-full gap-2">
           {sortedFixtures.map((fixture, index) => (
-            <AnimateWrapper>
-              <Fixture key={index} fixture={fixture} />
+            <AnimateWrapper key={index}>
+              <Fixture fixture={fixture} />
             </AnimateWrapper>
           ))}
         </div>

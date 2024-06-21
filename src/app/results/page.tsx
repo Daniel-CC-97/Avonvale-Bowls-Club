@@ -76,8 +76,8 @@ export default function Page() {
         </div>
         <div className="flex flex-col w-full gap-2">
           {sortedResults.map((result, index) => (
-            <AnimateWrapper>
-              <Result key={index} result={result} />
+            <AnimateWrapper key={index}>
+              <Result result={result} />
             </AnimateWrapper>
           ))}
         </div>
