@@ -1,4 +1,4 @@
-export const text = `Avonvale Bowling Club is a very friendly and successful club, and we are going from strength to strength and are always looking for new members.
+export const text = [`Avonvale Bowling Club is a very friendly and successful club, and we are going from strength to strength and are always looking for new members.
 
 The Green and Clubhouse are located by Netham Park, Avonvale Road, Bristol (behind the Board Mills Club).
 
@@ -8,5 +8,6 @@ Bowling is a great way to exercise and has many benefits for your health as well
 
 Monday is Club Night where members come down to practice and play and they will be more than happy to help anyone who is interested in joining or just wants to come along to see what it is like. 
 
-Feel free to browse our website and, if you cannot find what you are looking for, feel free to get in touch (Contact Us link) for more information.`
+Feel free to browse our website and, if you cannot find what you are looking for, feel free to get in touch ,<a>(Contact Us link)</a>, for more information.`]
 
+export const membershipText = `Annual membership for 2024 for new members is £45.  You are then able to play on Avonvale Bowling rinks 7 days a week,  any time that you want.  You can also play in friendly and club matches.  We welcome both experienced players and people who have never ever played bowls.  All ages and genders are welcome.  Annual membership for existing members is £95.`
