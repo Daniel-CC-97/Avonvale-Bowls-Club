@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 const AnimateWrapper = ({ children }) => {
   const { ref, inView } = useInView({
     triggerOnce: true, // Trigger animation only once
-    threshold: 0.5,    // When 50% of the component is in view
+    threshold: 0.1,    // When 10% of the component is in view
   });
 
   return (
