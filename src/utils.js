@@ -24,7 +24,8 @@ export const getSmallArticles = async () => {
 
   export const getOfficers = async () => {
     const response = await client.getEntries({
-        content_type: 'officer'
+        content_type: 'officer',
+        order: 'fields.order'
     });
 
     return response.items;
