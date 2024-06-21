@@ -35,7 +35,7 @@ const Fixture : React.FC<FixtureProps> = ({fixture}) => {
                 <p className="text-sm hidden lg:block">{fixture.fields.venue}</p>
                 <p className="text-sm hidden lg:block">{longDate}</p>
             </div>
-      </div>
+        </div>
     )
 }
 

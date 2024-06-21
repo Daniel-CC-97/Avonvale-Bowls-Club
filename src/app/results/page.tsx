@@ -6,6 +6,7 @@ import Footer from "../components/footer";
 import NavBar from "../components/navbar";
 import { getGames } from '../../utils';
 import Hero from '../components/hero';
+import AnimateWrapper from '../components/animatedComponent';
 
 interface FixtureType {
     fields: {
@@ -75,7 +76,9 @@ export default function Page() {
         </div>
         <div className="flex flex-col w-full gap-2">
           {sortedResults.map((result, index) => (
-            <Result key={index} result={result} />
+            <AnimateWrapper>
+              <Result key={index} result={result} />
+            </AnimateWrapper>
           ))}
         </div>
       </main>
