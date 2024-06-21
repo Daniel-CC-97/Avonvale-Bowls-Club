@@ -72,6 +72,9 @@ const NavBar: React.FC<NavBarProps> = () => {
                 <Link href="/news">
                   <h6 className="text-white hover:bg-primary-lighter hover:text-secondary-vibrant px-3 py-2 rounded-md text-lg font-medium">News</h6>
                 </Link>
+                <Link href="/booking">
+                  <h6 className="text-white hover:bg-primary-lighter hover:text-white block px-3 py-2 rounded-md text-base font-medium">Booking</h6>
+                </Link>
                 <div className="relative">
                   <button
                     onClick={() => setMoreMenuOpen(!isMoreMenuOpen)}
@@ -109,6 +112,9 @@ const NavBar: React.FC<NavBarProps> = () => {
             </Link>
             <Link href="/news">
               <h6 className="text-white hover:bg-primary-lighter hover:text-white block px-3 py-2 rounded-md text-base font-medium">News</h6>
+            </Link>
+            <Link href="/booking">
+              <h6 className="text-white hover:bg-primary-lighter hover:text-white block px-3 py-2 rounded-md text-base font-medium">Booking</h6>
             </Link>
             <div className="relative">
               <button

@@ -86,3 +86,24 @@ export const getNews = async () => {
     
     return [firstHalf, secondHalf];
   }
+
+  export const adjustIframeHeight = () => {
+    var iframes = document.getElementsByTagName('iframe');
+    var loadCounter = 0;
+
+    for (var i = 0; i < iframes.length; i++) {
+        iframes[i].onload = function() {
+            loadCounter++;
+            if (loadCounter === iframes.length) {
+                // All iframes are loaded, adjust their heights
+                for (var j = 0; j < iframes.length; j++) {
+                    adjustSingleIframeHeight(iframes[j]);
+                }
+            }
+        };
+    }
+}
+
+const adjustSingleIframeHeight = (iframe) => {
+    iframe.style.height = '1400px'; // Adjust height as needed
+}
