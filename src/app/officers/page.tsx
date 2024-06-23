@@ -12,14 +12,17 @@ export default function Page() {
 
     const [officers, setOfficers] = useState<any>([]);
     const [management, setManagement] = useState<any>([]);
+    const [viceManagement, setViceManagement] = useState<any>([]);
 
     useEffect(() => {
       const fetchOfficers = async () => {
           try {
               const allOfficers = await getOfficers();
-              const managementArray = allOfficers.filter(officer => officer.fields.managementCommittee);
-              const officersArray = allOfficers.filter(officer => !officer.fields.managementCommittee)
+              const managementArray = allOfficers.filter(officer => officer.fields.roleType === 'Management Committee');
+              const viceManagementArray = allOfficers.filter(officer => officer.fields.roleType === 'Vice Committee')
+              const officersArray = allOfficers.filter(officer => officer.fields.roleType === 'Officer')
               setManagement(managementArray);
+              setViceManagement(viceManagementArray)
               setOfficers(officersArray);
           } catch (error) {
               console.error('Error fetching officers: ', error);
@@ -38,6 +41,12 @@ export default function Page() {
             <h2 className="font-bold text-xl mb-2">Management Committee</h2>
             <div className="flex flex-wrap gap-2">
                 {management.map((manager, index) => (
+                    <Officer key={index} officer={manager}></Officer>
+                ))}
+            </div>
+            <h2 className="font-bold text-xl mb-2 mt-4">Vice Committee</h2>
+            <div className="flex flex-wrap gap-2">
+                {viceManagement.map((manager, index) => (
                     <Officer key={index} officer={manager}></Officer>
                 ))}
             </div>

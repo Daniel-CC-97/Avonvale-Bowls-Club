@@ -55,7 +55,7 @@ export default function Page() {
   const sortedFixtures = filteredFixtures.sort((a, b) => new Date(a.fields.dateAndTime).getTime() - new Date(b.fields.dateAndTime).getTime());
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col overflow-x-hidden min-h-screen">
       <NavBar />
       <Hero text="Fixtures" imageUrl="/bowl.jpg" height="small" />
       <main className="flex-grow mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-8">
