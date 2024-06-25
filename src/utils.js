@@ -41,7 +41,8 @@ export const getImages = async () => {
 
 export const getNews = async () => {
     const response = await client.getEntries({
-        content_type: 'smallArticle'
+        content_type: 'smallArticle',
+        order: '-sys.createdAt'
     });
 
     return response.items;

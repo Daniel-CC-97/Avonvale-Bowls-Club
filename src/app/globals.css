@@ -15,6 +15,10 @@
   --secondary-faded: rgba(236, 149, 44, 0.4); /* Adjust the opacity as needed */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background-color: rgb(var(--background-rgb));
