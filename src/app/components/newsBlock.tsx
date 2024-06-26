@@ -8,6 +8,7 @@ interface NewsProps {
 }
 
 const NewsBlock: React.FC<NewsProps> = ({ newsTitle, newsContent, createdAtDate }) => {
+    
   const [isExpanded, setIsExpanded] = useState(false);
   const [needsButton, setNeedsButton] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -36,7 +37,7 @@ const NewsBlock: React.FC<NewsProps> = ({ newsTitle, newsContent, createdAtDate 
       <div
         ref={contentRef}
         className={`relative overflow-hidden transition-max-height duration-500 ease-in-out ${
-          isExpanded ? 'max-h-screen' : 'max-h-32'
+          isExpanded ? 'max-h-[3000px]' : 'max-h-32'
         }`}
       >
         {newsContent.map((contentArr, index) => (
