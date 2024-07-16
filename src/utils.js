@@ -48,6 +48,14 @@ export const getNews = async () => {
     return response.items;
 };
 
+export const getHistory = async () => {
+    const response = await client.getEntries({
+        content_type: 'history',
+    });
+
+    return response.items;
+};
+
   // Get date from String
   export const getLongDate = (dateTimeString) => {
         // Create a new Date object from the datetime string

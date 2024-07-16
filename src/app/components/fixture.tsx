@@ -25,7 +25,7 @@ const Fixture : React.FC<FixtureProps> = ({fixture}) => {
         <div className="flex flex-col-reverse lg:flex-row gap-1 lg:gap-0 bg-slate-200 text-primary-darker rounded-lg p-1 lg:p-2">
             <div className="flex w-full lg:w-2/5 justify-center gap-2 lg:gap-4 items-center">
                 <h6 className="w-1/3 text-right text-xl">{fixture.fields.teams[0]}</h6>
-                <span className="bg-primary text-secondary-vibrant font-extrabold text-2xl rounded p-2">{simpleTime}</span>
+                <span className="bg-primary text-secondary-vibrant font-extrabold text-2xl rounded text-center py-2 w-20">{simpleTime}</span>
                 <h6 className="w-1/3 lg:whitespace-nowrap text-xl">{fixture.fields.teams[1]}</h6>
             </div>
                 <p className="text-sm block lg:hidden text-center">{longDate}</p>

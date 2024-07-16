@@ -90,6 +90,9 @@ const NavBar: React.FC<NavBarProps> = () => {
                       <Link href="/photos">
                         <h6 className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100">Photos</h6>
                       </Link>
+                      <Link href="/history">
+                        <h6 className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100">History</h6>
+                      </Link>
                       {/* Add more options as needed */}
                     </div>
                   )}
@@ -130,6 +133,9 @@ const NavBar: React.FC<NavBarProps> = () => {
                   </Link>
                   <Link href="/photos">
                     <h6 className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100">Photos</h6>
+                  </Link>
+                  <Link href="/history">
+                    <h6 className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100">History</h6>
                   </Link>
                   {/* Add more options as needed */}
                 </div>
