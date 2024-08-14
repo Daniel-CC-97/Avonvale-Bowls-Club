@@ -17,8 +17,6 @@ export default function Page() {
             try {
                 const data = await getHistory();
                 setHistory(data);
-                console.log('data: ', data);
-                
             } catch (error) {
                 console.error('Error fetching history: ', error);
             }
