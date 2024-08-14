@@ -10,7 +10,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "contentful": "^10.12.1",
+    "axios": "^1.7.4",
+    "contentful": "^10.11.12",
     "dotenv": "^16.4.5",
     "framer-motion": "^11.2.11",
     "html-react-parser": "^5.1.10",
@@ -18,7 +19,9 @@
     "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "react-intersection-observer": "^9.10.3"
+    "react-intersection-observer": "^9.10.3",
+    "react-masonry-css": "^1.0.16",
+    "react-modal-image": "^2.6.0"
   },
   "devDependencies": {
     "@types/node": "^20",

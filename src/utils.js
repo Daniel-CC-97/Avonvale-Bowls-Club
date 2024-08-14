@@ -39,6 +39,14 @@ export const getImages = async () => {
   return response.items;
 };
 
+export const getGalleries = async () => {
+  const response = await client.getEntries({
+    content_type: "gallery",
+  });
+
+  return response.items;
+};
+
 export const getNews = async () => {
   const response = await client.getEntries({
     content_type: "smallArticle",

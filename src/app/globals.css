@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* styles/globals.css or another global CSS file */
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -9,8 +10,8 @@
   --primary: #004d79;
   --secondary: #ec952c;
 
-  --primary-rgb: rgb(0,77,121);
-  --secondary-rgb: rgb(236,149,44);
+  --primary-rgb: rgb(0, 77, 121);
+  --secondary-rgb: rgb(236, 149, 44);
 
   --secondary-faded: rgba(236, 149, 44, 0.4); /* Adjust the opacity as needed */
 }
